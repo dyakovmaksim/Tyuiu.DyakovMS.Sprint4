@@ -1,10 +1,20 @@
-﻿namespace Tyuiu.DyakovMS.Sprint4.Task0.V7.Test
+﻿using Tyuiu.DyakovMS.Sprint4.Task0.V7.Lib;
+
+namespace Tyuiu.DyakovMS.Sprint4.Task0.V7.Test
 {
+    [TestClass]
     public class DataServiceTest
     {
-        public void TestMethod1()
+        [TestMethod]
+        public void TestGetMultOddArrEl()
         {
-            Assert.AreEqual(1, 1);
+            DataService ds = new DataService();
+            int[] array = { 9, 8, 7, 9, 5, 4, 3, 2, 3, 7 };
+
+            int wait = 178605;
+
+            int res = ds.GetMultOddArrEl(array);
+            Assert.AreEqual(wait, res);
         }
     }
 }

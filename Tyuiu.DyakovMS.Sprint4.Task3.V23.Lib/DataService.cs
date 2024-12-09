@@ -7,9 +7,13 @@ namespace Tyuiu.DyakovMS.Sprint4.Task3.V23.Lib
         public int Calculate(int[,] array)
         {
             int sum = 0;
+
             foreach (var item in array) 
             {
-                sum += item;
+                if (item % 2 == 0)
+                {
+                    sum++;
+                }
             }
             return sum;
         }

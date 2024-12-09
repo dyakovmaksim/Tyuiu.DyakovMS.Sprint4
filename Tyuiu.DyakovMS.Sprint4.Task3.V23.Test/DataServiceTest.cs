@@ -21,7 +21,7 @@ namespace Tyuiu.DyakovMS.Sprint4.Task3.V23.Test
 
             int result = ds.Calculate(array);
 
-            int wait = 124;
+            int wait = 13;
 
             Assert.AreEqual(wait, result);
         }
